@@ -7,13 +7,13 @@
   <title>Giphy API Tutorial</title>
 </head>
 <body>
-  <img src="#">
+  <img src="#" alt="cat">
   <script>
     const img = document.querySelector('img');
     fetch('https://api.giphy.com/v1/gifs/translate?api_key=HeYWGXYFHzdtOvhWWvPh2tYiViKjqhzI&s=cats&weirdness=10', {mode: 'cors'})
       .then((response) => response.json())
       .then((response) => img.src = response.data.images.original.url)
-      .catch((err) => {throw err});
+      .catch((err) => console.error(err));
   </script>  
 </body>
 </html>
