@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Giphy API Tutorial</title>
+</head>
+<body>
+  <img src="#">
+  <script>
+    const img = document.querySelector('img');
+    fetch('https://api.giphy.com/v1/gifs/translate?api_key=HeYWGXYFHzdtOvhWWvPh2tYiViKjqhzI&s=cats&weirdness=10', {mode: 'cors'})
+      .then((response) => response.json())
+      .then((response) => img.src = response.data.images.original.url)
+      .catch((err) => {throw err});
+  </script>  
+</body>
+</html>
