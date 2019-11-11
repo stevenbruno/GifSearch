@@ -1,0 +1,52 @@
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #eef1f2;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  margin: auto;
+  padding-top: 80px;
+}
+
+.searchGroup {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-bottom: 16px;
+}
+
+.searchGroup input,
+.searchGroup button {
+  border-radius: 4px;
+}
+
+.searchGroup input {
+  height: 36px;
+  padding-left: 8px;
+  margin-right: 4px;
+}
+
+.searchGroup button {
+  height: 34px;
+}
+
+#mainImg {
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.enter {
+  font-size: 14px;
+  font-weight: 600;
+  color: grey;
+  margin-left: auto;
+}
