@@ -1,7 +1,5 @@
-# giphy_api_demo
-
 ### Summary
-An application that allows users to search for gifs. This is just a demo, hence the visible client-side API key ...
+Search for gifs!
 
 ### Built with
 * Vanilla Javascript
